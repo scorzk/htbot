@@ -23,6 +23,6 @@ bot.on("callback_query", function(data){
     // Get the callback data specified
    let callback_data = data.data
    if(callback_data == "data1") {
-      bot.answerCallbackQuery(chatId,'hello'); 
+      bot.sendMessage(msg.chat.id, 'Pravilno');
    }
 });
